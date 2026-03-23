@@ -11,8 +11,8 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.welcome_screen)
 
         val getStartedButton: Button = findViewById(R.id.getStartedButton)
-            getStartedButton.setOnClickListener {
-        val intent = Intent(this, MainActivity::class.java)
+        getStartedButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
